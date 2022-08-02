@@ -42,8 +42,7 @@ const Result = styled.div`
   h1 {
     text-align: right;
     widht: 100%;
-    height: 100%
-    border: solid 1px #fff;
+    height: 100%;
   }
 `;
 
