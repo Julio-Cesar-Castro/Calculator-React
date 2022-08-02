@@ -129,12 +129,9 @@ export default class Main extends Component {
     operator: "",
   };
 
-  nome = "julio";
-
   // -- Arrow function for buttons --
   // Function to capture an value
   setNum = (e) => {
-    console.log(this.nome);
     if (this.state.num.length < 8) {
       // "e" represent an event to capture a value
       if (this.state.num === "0") {
