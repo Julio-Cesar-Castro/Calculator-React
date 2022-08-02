@@ -37,7 +37,6 @@ const Result = styled.div`
   width: 75%;
   height: 20%;
   font-size: 25px;
-  border: solid 1px #fff;
 
   h1 {
     text-align: right;
