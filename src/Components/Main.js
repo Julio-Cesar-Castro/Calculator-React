@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import styles from "../App.css";
 
+// Usar toFixed -- Pesquisar
+
 const Container = styled.div`
   margin: 0 auto;
   max-width: 1920px;
@@ -30,6 +32,31 @@ const Calculator = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  @media (max-width: 1300px) {
+    width: 30%;
+    height: 95%;
+  }
+
+  @media (max-width: 1060px) {
+    width: 40%;
+  }
+
+  @media (max-width: 850px) {
+    width: 50%;
+  }
+
+  @media (max-width: 680px) {
+    width: 70%;
+  }
+
+  @media (max-width: 580px) {
+    width: 90%;
+  }
+
+  @media (max-width: 320px) {
+    height: 95%;
+  }
 `;
 
 const Result = styled.div`
@@ -37,10 +64,10 @@ const Result = styled.div`
   width: 75%;
   height: 20%;
   font-size: 25px;
-
+  overflow: hidden;
   h1 {
     text-align: right;
-    widht: 100%;
+    width: 100%;
     height: 100%;
   }
 `;
@@ -51,6 +78,10 @@ const Columns = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1300px) {
+    justify-content: space-evenly;
+  }
 `;
 
 const Buttonslightgray = styled.button`
@@ -62,6 +93,37 @@ const Buttonslightgray = styled.button`
   font-size: 1.3rem;
   margin: 7px;
   text-align: center;
+
+  @media (max-width: 1300px) {
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 1060px) {
+    width: 70px;
+    padding: 1.3rem;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 680px) {
+    width: 70px;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 428px) {
+    width: 60px;
+    padding: 1.3rem;
+    font-size: 1.3rem;
+  }
+
+  @media (max-width: 320px) {
+    width: 55px;
+    padding: 1.1rem;
+    font-size: 1.2rem;
+  }
 `;
 
 const Buttonsgray = styled.button`
@@ -78,6 +140,37 @@ const Buttonsgray = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 1300px) {
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 1060px) {
+    width: 70px;
+    padding: 1.3rem;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 680px) {
+    width: 70px;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 428px) {
+    width: 60px;
+    padding: 1.3rem;
+    font-size: 1.3rem;
+  }
+
+  @media (max-width: 320px) {
+    width: 55px;
+    padding: 1.1rem;
+    font-size: 1.2rem;
+  }
 `;
 
 const Buttondel = styled.button`
@@ -102,6 +195,37 @@ const Buttondel = styled.button`
     #512728,
     #000000
   );
+
+  @media (max-width: 1300px) {
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 1060px) {
+    width: 70px;
+    padding: 1.3rem;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 680px) {
+    width: 70px;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 428px) {
+    width: 60px;
+    padding: 1.3rem;
+    font-size: 1.3rem;
+  }
+
+  @media (max-width: 320px) {
+    width: 55px;
+    padding: 1.1rem;
+    font-size: 1.2rem;
+  }
 `;
 
 const Buttonsgold = styled.button`
@@ -118,6 +242,37 @@ const Buttonsgold = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 1300px) {
+    padding: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 1060px) {
+    width: 70px;
+    padding: 1.3rem;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 680px) {
+    width: 70px;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 428px) {
+    width: 60px;
+    padding: 1.3rem;
+    font-size: 1.3rem;
+  }
+
+  @media (max-width: 320px) {
+    width: 55px;
+    padding: 1.1rem;
+    font-size: 1.2rem;
+  }
 `;
 
 export default class Main extends Component {
